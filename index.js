@@ -16,7 +16,7 @@ const module_capsule = require('./modules/capsule')
 const module_giftsend = require('./modules/giftsend')
 const module_dailybag = require('./modules/dailybag')
 const module_silver2coin = require('./modules/silver2coin')
-
+const logger = require('./utils/logger')
 const init = require('./utils/init')
 const sleep = require('./utils/sleep')
 
@@ -25,15 +25,16 @@ const app = async () => {
   while (true) {
     await module_auth()
     await module_tasks()
-    await module_heart()
-    await module_silver()
+    // await module_heart()
+    // await module_silver()
     await module_group()
-    await module_capsule()
-    await module_giftsend()
-    await module_dailybag()
+    // await module_capsule()
+    // await module_giftsend()
+    // await module_dailybag()
     await module_silver2coin()
-    await module_guard()
-    await sleep(1000)
+    // await module_guard()
+    logger.info('Mission Complete!')
+    await sleep(10000000)
   }
 }
 

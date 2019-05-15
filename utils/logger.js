@@ -1,5 +1,6 @@
 const chalk = require('chalk')
 const datetime = require('silly-datetime')
+datetime.locate('zh-cn')
 var Atime=datetime.format(new Date(), 'YYYY-MM-DD HH:mm:ss')
 
 module.exports = {

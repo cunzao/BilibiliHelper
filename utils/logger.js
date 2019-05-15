@@ -1,6 +1,6 @@
 const chalk = require('chalk')
 const datetime = require('silly-datetime')
-datetime.locate('zh-cn')
+datetime = datetime.locate('zh-cn')
 
 module.exports = {
   debug: message => console.log(`${chalk.bgCyan('DEBUG')} ${datetime.format(new Date(), 'YYYY-MM-DD HH:mm:ss')} ${message}`),

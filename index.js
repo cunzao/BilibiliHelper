@@ -34,7 +34,7 @@ const app = async () => {
     // await module_silver2coin()
     // await module_guard()
     logger.info('Mission Complete!')
-    await sleep(‭82800000‬)
+    await sleep(43200000)
   }
 }
 
